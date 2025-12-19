@@ -20,20 +20,20 @@
 			</div>
 
 			<div class="ftr_right sp_none">
-				<div class="ftr_link"><a href="./company.php">企業情報</a></div>
+				<div class="ftr_link"><a href="<?php echo home_url('/company/') ?>">企業情報</a></div>
 				<div class="ftr_link">
-					<a href="./equipment.php">FA技術営業</a>　　<a href="./engineering.php">プラントエンジニアリング</a>　　<a href="./robots.php">技術（相模原技術センター）</a>
+					<a href="<?php echo home_url('/equipment/') ?>">FA技術営業</a>　　<a href="<?php echo home_url('/engineering/') ?>">プラントエンジニアリング</a>　　<a href="<?php echo home_url('/robots/') ?>">技術（相模原技術センター）</a>
 				</div>
-				<div class="ftr_link"><a href="./products.php">製品情報</a></div>
+				<div class="ftr_link"><a href="<?php echo home_url('/products/') ?>">製品情報</a></div>
 				<div class="ftr_link"><a href="https://en-gage.net/altruist_saiyo/" target="_blank">採用情報 <img class="nav01_icon" src="<?=$temp_dir_uri ?>/_old_assets/img/gaibu_link.png" /></a></div>
 			</div>
 		</div>
-		<div class="ftr_copy"><span class="sp_none"><a href="./terms.php">サイト利用規約</a><span>｜</span><a href="./privacy.php">プライバシーポリシー</a><span>｜</span><a href="./contact.php">お問い合わせ</a><br /></span>&copy; Altruist Co., Ltd. All Rights Reserved.</div>
+		<div class="ftr_copy"><span class="sp_none"><a href="<?php echo home_url('/terms/') ?>">サイト利用規約</a><span>｜</span><a href="<?php echo home_url('/privacy/') ?>">プライバシーポリシー</a><span>｜</span><a href="<?php echo home_url('/contact/') ?>">お問い合わせ</a><br /></span>&copy; Altruist Co., Ltd. All Rights Reserved.</div>
 
 <!--下部バナー-->
 
   <div class="cookie-consent">
-    <div class="cookie-text">当ウェブサイトでは、お客様により良いサービスを提供するため、cookieを利用しています。cookieの使用に関する詳細は「<a href="./privacy.php">プライバシーポリシー</a>」をご覧ください。</div>
+    <div class="cookie-text">当ウェブサイトでは、お客様により良いサービスを提供するため、cookieを利用しています。cookieの使用に関する詳細は「<a href="<?php echo home_url('/privacy/') ?>">プライバシーポリシー</a>」をご覧ください。</div>
     <div class="cookie-agree">OK</div>
   </div>
 

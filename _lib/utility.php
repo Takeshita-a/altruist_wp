@@ -6,7 +6,7 @@ class My_Utility{
 		global $_SESSION;
 
 		if($_SESSION['session_admin_power']<$lvl){
-			My_Js_Action::alerttomove("Can not access!!","./");
+			My_Js_Action::alerttomove("Can not access!!", home_url());
 		}
 	}
 

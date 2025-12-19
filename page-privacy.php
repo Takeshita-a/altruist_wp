@@ -39,7 +39,7 @@
 			</div>
 		</div>
 		<div class="pankuzu_wrap">
-			<div class="pankuzu"><a href="./">TOP</a>　＞　プライバシーポリシー</div>
+			<div class="pankuzu"><a href="<?php echo home_url() ?>">TOP</a>　＞　プライバシーポリシー</div>
 		</div>
 		<section class="res01">
 			<div class="res01_box">
