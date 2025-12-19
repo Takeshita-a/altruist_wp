@@ -1457,13 +1457,11 @@ body {
 .news_d_cnt {
 	width:96%;
 	margin-left:2%;
-	text-align:center;
 }
 
 .news_d_cnt p {
 	width:100%;
 	margin-bottom:2em;
-	text-align:left;
 }
 
 .news_d_cnt a{
@@ -1478,7 +1476,9 @@ body {
 }
 
 .news_d_cnt img {
-	width:50%;
+	display: block;
+	width: 50%;
+	height: auto;
 	margin:0 auto 1em auto;
 }
 

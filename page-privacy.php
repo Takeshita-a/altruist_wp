@@ -1,10 +1,13 @@
+<?php 
+	$temp_dir = get_template_directory();
+?>
 <!DOCTYPE html> 
 <html lang="ja">
 <head>
 
 <!-- google analytics ここから -->
 <?php if(is_public_server()): ?>
-<?php include get_template_directory()."/_old_assets/_google_tag.php"; ?>
+<?php include $temp_dir."/_old_assets/_google_tag.php"; ?>
 <?php endif; ?>
 <!-- google analytics ここまで -->
 
@@ -13,7 +16,7 @@
 <meta name="keywords" content="アルトリスト, プライバシーポリシー, 相模原技術センター, ステンレス排水溝, 食品, 飲料, 工場, 食品工場, 飲料工場, 包装, マテハン, 設備, 排水溝, 集水, ロボット" />
 <meta name="Description" content="アルトリスト株式会社は、お客様の個人情報の重要性を認識し、個人情報保護に関する法令及びその他の規範を遵守し、以下のとおりプライバシーポリシーを定め、個人情報の適切な管理及び利用に努めます。" />
 
-<?php include get_template_directory()."/_old_assets/_head.php"; ?>
+<?php include $temp_dir."/_old_assets/_head.php"; ?>
 
 <!--ogp-->
 <meta property="og:title" content="プライバシーポリシー">
@@ -28,7 +31,7 @@
 <body>
 
 <div id="style01" class="">
-<?php include get_template_directory()."/_old_assets/_header.php"; ?>
+<?php include $temp_dir."/_old_assets/_header.php"; ?>
 	<main>
 		<div class="ul_title">
 			<div class="title01">
@@ -113,11 +116,11 @@
 
 			</div>
 		</section>
-<?php include get_template_directory()."/_old_assets/_footer.php"; ?>
+<?php include $temp_dir."/_old_assets/_footer.php"; ?>
 </div>
 
-<?php include get_template_directory()."/_old_assets/_js.php"; ?>
+<?php include $temp_dir."/_old_assets/_js.php"; ?>
 
-<?php include get_template_directory()."/_old_assets/_cookie.php"; ?>
+<?php include $temp_dir."/_old_assets/_cookie.php"; ?>
 </body>
 </html>

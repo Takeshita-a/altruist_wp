@@ -1,5 +1,6 @@
 <?php
-include get_template_directory()."/_lib/_inc.php";
+$temp_dir = get_template_directory();
+include $temp_dir."/_lib/_inc.php";
 
 $Err = array();
 
@@ -48,18 +49,18 @@ $HiddenString = implode("\r\n",$FormFlds);
 
 <!-- google analytics ここから -->
 <?php if(is_public_server()): ?>
-<?php include get_template_directory()."/_old_assets/_google_tag.php"; ?>
+<?php include $temp_dir."/_old_assets/_google_tag.php"; ?>
 <?php endif; ?>
 <!-- google analytics ここまで -->
 <title>お問い合わせ | アルトリスト株式会社</title>
 <meta name="Description" content="" />
-<?php include get_template_directory()."/_old_assets/_head.php"; ?>
+<?php include $temp_dir."/_old_assets/_head.php"; ?>
 
 </head>
 <body>
 
 <div id="style01" class="">
-<?php include get_template_directory()."/_old_assets/_header.php"; ?>
+<?php include $temp_dir."/_old_assets/_header.php"; ?>
 	<main>
 		<div class="ul_title">
 			<div class="title01">
@@ -67,7 +68,7 @@ $HiddenString = implode("\r\n",$FormFlds);
 			</div>
 		</div>
 		<div class="pankuzu_wrap">
-			<div class="pankuzu"><a href="<?php echo home_url() ?>">TOP</a>　＞　お問い合わせ</div>
+			<div class="pankuzu"><a href="<?=home_url() ?>">TOP</a>　＞　お問い合わせ</div>
 		</div>
 		<section class="res01">
 			<div class="res01_box">
@@ -87,14 +88,14 @@ function ReturnSubmit() {
 
 	var f = document.RegForm;
 
-	f.action = "<?php echo home_url('/contact/') ?>";
+	f.action = "<?=home_url('/contact/') ?>";
 	f.submit();
 
 }
 
 -->
 </script>
-			<form name="RegForm" method="post" action="<?php echo home_url('/contact_send/') ?>" >
+			<form name="RegForm" method="post" action="<?=home_url('/contact_send/') ?>" >
 			<?=$HiddenString?>
 						<dl class="res01_dl">
 							<dt>お名前<span class="required">※</span></dt>
@@ -134,9 +135,9 @@ function ReturnSubmit() {
 				
 			</div>
 		</section>
-<?php include get_template_directory()."/_old_assets/_footer.php"; ?>
+<?php include $temp_dir."/_old_assets/_footer.php"; ?>
 </div>
 
-<?php include get_template_directory()."/_old_assets/_js.php"; ?>
+<?php include $temp_dir."/_old_assets/_js.php"; ?>
 </body>
 </html>

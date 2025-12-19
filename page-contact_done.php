@@ -1,10 +1,13 @@
+<?php 
+	$temp_dir = get_template_directory();
+?>
 <!DOCTYPE html> 
 <html lang="ja">
 <head>
 
 <!-- google analytics ここから -->
 <?php if(is_public_server()): ?>
-<?php include get_template_directory()."/_old_assets/_google_tag.php"; ?>
+<?php include $temp_dir."/_old_assets/_google_tag.php"; ?>
 <?php endif; ?>
 <!-- google analytics ここまで -->
 </head>
@@ -12,12 +15,12 @@
 <meta charset="UTF-8">
 <title>お問い合わせ | アルトリスト株式会社</title>
 <meta name="Description" content="" />
-<?php include get_template_directory()."/_old_assets/_head.php"; ?>
+<?php include $temp_dir."/_old_assets/_head.php"; ?>
 
 <body>
 
 <div id="style01" class="">
-<?php include get_template_directory()."/_old_assets/_header.php"; ?>
+<?php include $temp_dir."/_old_assets/_header.php"; ?>
 	<main>
 		<div class="ul_title">
 			<div class="title01">
@@ -25,7 +28,7 @@
 			</div>
 		</div>
 		<div class="pankuzu_wrap">
-			<div class="pankuzu"><a href="<?php echo home_url(); ?>">TOP</a>　＞　お問い合わせ</div>
+			<div class="pankuzu"><a href="<?=home_url(); ?>">TOP</a>　＞　お問い合わせ</div>
 		</div>
 		<section class="res01">
 			<div class="res01_box">
@@ -37,9 +40,9 @@
 				</div>
 			</div>
 		</section>
-<?php include get_template_directory()."/_old_assets/_footer.php"; ?>
+<?php include $temp_dir."/_old_assets/_footer.php"; ?>
 </div>
 
-<?php include get_template_directory()."/_old_assets/_js.php"; ?>
+<?php include $temp_dir."/_old_assets/_js.php"; ?>
 </body>
 </html>

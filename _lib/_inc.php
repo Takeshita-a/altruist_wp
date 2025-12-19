@@ -31,4 +31,4 @@ include("$_LIBPATH/utility.php");
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<script language="JavaScript" src="<?php echo get_template_directory_uri() ?>/_lib/javascript.js"></script>
+<script language="JavaScript" src="<?=get_template_directory_uri() ?>/_lib/javascript.js"></script>
