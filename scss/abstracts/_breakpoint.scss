@@ -1,0 +1,43 @@
+// *- min
+// *-- min-width 基盤レシポンシブ対応
+@mixin min($break-point: "t") {
+	$break-point-px: null;
+	@if $break-point == "l" {
+		$break-point-px: 1025px;
+	} @else if $break-point == "t" {
+		$break-point-px: 769px;
+	} @else if $break-point == "ml" {
+		$break-point-px: 426px;
+	} @else if $break-point == "mm" {
+		$break-point-px: 376px;
+	} @else if $break-point == "ms" {
+		$break-point-px: 321px;
+	} @else {
+		$break-point-px: $break-point;
+	}
+	@media screen and (min-width: $break-point-px) {
+		@content;
+	}
+}
+
+// *- max
+// *-- max-width 基盤レシポンシブ対応
+@mixin max($break-point: "t") {
+	$break-point-px: null;
+	@if $break-point == "l" {
+		$break-point-px: 1024px;
+	} @else if $break-point == "t" {
+		$break-point-px: 768px;
+	} @else if $break-point == "ml" {
+		$break-point-px: 425px;
+	} @else if $break-point == "mm" {
+		$break-point-px: 375px;
+	} @else if $break-point == "ms" {
+		$break-point-px: 320px;
+	} @else {
+		$break-point-px: $break-point;
+	}
+	@media screen and (max-width: $break-point-px) {
+		@content;
+	}
+}
