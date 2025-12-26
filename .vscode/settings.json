@@ -1,0 +1,31 @@
+{
+  // 保存時フォーマットはこのプロジェクトのみ有効
+  "editor.formatOnSave": true,
+
+  // JS
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // CSS / SCSS
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // JSON / JSONC
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // PHP は絶対に整形しない
+  "[php]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
+  }
+}
