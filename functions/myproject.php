@@ -45,3 +45,74 @@ function get_news_term_name($post_id){
 		return 'お知らせ';
 	}
 }
+
+function get_company_info_list(){
+	return [
+		[
+			'id' => 'top_message',
+			'ja' => '代表ごあいさつ',
+			'en' => 'TOP MESSAGE',
+		],
+		[
+			'id' => 'management_philosophy',
+			'ja' => '経営理念',
+			'en' => 'MANAGEMENT PHILOSOPHY',
+		],
+		[
+			'id' => 'company_overview',
+			'ja' => '会社概要',
+			'en' => 'COMPANY OVERVIEW',
+		],
+		[
+			'id' => 'history',
+			'ja' => '沿革',
+			'en' => 'HISTORY',
+		],
+		[
+			'id' => 'elect_public_notice',
+			'ja' => '電子公告',
+			'en' => 'ELECTRONIC PUBLIC NOTICE',
+		],
+		[
+			'id' => 'officer_introduction',
+			'ja' => '役員紹介',
+			'en' => 'OFFICER INTRODUCTION',
+		],
+	];
+}
+
+function get_nav_list(){
+	return [
+		[
+			'id' => 'company',
+			'ja' => '企業情報',
+			'en' => 'COMPANY INFORMATION',
+		],
+		[
+			'id' => 'fa_technical_sales',
+			'ja' => 'FA技術営業',
+			'en' => 'FA TECHNICAL SALES',
+		],
+		[
+			'id' => 'plant_engineering',
+			'ja' => 'プラントエンジニアリング',
+			'en' => 'PLANT ENGINEERING',
+		],
+		[
+			'id' => 'technology',
+			'ja' => '技術（相模原技術センター）',
+			'en' => 'TECHNOLOGY',
+		],
+		[
+			'id' => 'recruit',
+			'ja' => '採用情報',
+			'en' => 'RECRUIT',
+			'link' => 'https://en-gage.net/altruist_saiyo/',
+		],
+		[
+			'id' => 'product',
+			'ja' => '製品情報',
+			'en' => 'PRODUCT',
+		],
+	];
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="14" viewBox="0 0 20 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_125" data-name="長方形 125" width="20" height="14" transform="translate(3 6.478)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="長方形_124" data-name="長方形 124" width="19.321" height="13.321" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="icon-mail" transform="translate(-3 -6.478)" clip-path="url(#clip-path)">
+    <g id="グループ_86" data-name="グループ 86" transform="translate(3.34 6.427)">
+      <g id="icon-mail-2" data-name="icon-mail" clip-path="url(#clip-path-2)">
+        <path id="パス_60" data-name="パス 60" d="M18.065,13.321H1.255A1.257,1.257,0,0,1,0,12.065V1.255A1.257,1.257,0,0,1,1.255,0h16.81a1.257,1.257,0,0,1,1.255,1.255v10.81a1.257,1.257,0,0,1-1.255,1.255M1.255,1.076a.18.18,0,0,0-.179.179v10.81a.18.18,0,0,0,.179.179h16.81a.18.18,0,0,0,.179-.179V1.255a.18.18,0,0,0-.179-.179Z" fill="#fff"/>
+        <path id="パス_61" data-name="パス 61" d="M290.39,162.749a.536.536,0,0,1-.35-.13l-6.468-5.547a.538.538,0,1,1,.7-.817l6.468,5.547a.538.538,0,0,1-.35.946" transform="translate(-271.752 -149.717)" fill="#fff"/>
+        <path id="パス_62" data-name="パス 62" d="M4.061,162.749a.538.538,0,0,1-.35-.946l6.468-5.547a.538.538,0,1,1,.7.817l-6.468,5.547a.536.536,0,0,1-.35.13" transform="translate(-3.379 -149.717)" fill="#fff"/>
+        <path id="パス_63" data-name="パス 63" d="M17.992,22.791a1.61,1.61,0,0,1-1.1-.432L8.86,14.867a.538.538,0,1,1,.734-.787l8.032,7.493a.54.54,0,0,0,.734,0l8.032-7.493a.538.538,0,1,1,.734.787l-8.032,7.493a1.61,1.61,0,0,1-1.1.432" transform="translate(-8.332 -13.363)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

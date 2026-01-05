@@ -3,5 +3,150 @@
 @use '../abstracts/breakpoint' as *;
 
 .site-header {
-	background-color: red;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(#fff, 90%);
+  backdrop-filter: blur(5px);
+}
+
+.sh {
+  &-bar {
+    display: flex;
+    justify-content: space-between;
+    &-logo {
+      padding: 18px 20px;
+      img {
+        display: block;
+        width: 192px;
+      }
+    }
+    &-btn {
+      @include min {
+        display: none;
+      }
+      cursor: pointer;
+      display: grid;
+      place-content: center;
+      width: 70px;
+      aspect-ratio: 1;
+      background-color: $col-red;
+      &-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        .line {
+          display: block;
+          width: 100%;
+          height: 1px;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+  &-main {
+    flex: 1;
+    &-inner {
+      display: flex;
+      justify-content: flex-end;
+      gap: min(2.7vw, 50px);
+      height: 100%;
+      @include max(ll) {
+        gap: 2vw;
+      }
+    }
+    &-nav {
+      display: flex;
+      gap: inherit;
+      &-item {
+        position: relative;
+        display: grid;
+        place-items: center;
+        font-weight: $fw-med;
+        @include max(ll) {
+          font-size: 14px;
+        }
+        &.external {
+          p::after {
+            content: '';
+            display: inline-block;
+            vertical-align: sub;
+            margin-left: 3px;
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+            mask: url(../img/icon-external-link.svg) no-repeat center / contain;
+          }
+        }
+        &::after {
+          content: '';
+          opacity: 0;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 7px;
+          background-color: $col-red;
+          transition: all 0.3s;
+        }
+        &:hover {
+          opacity: 1;
+          color: $col-red;
+          &.external p::after {
+            background-color: $col-red;
+          }
+          &::after {
+            opacity: 1;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .contact {
+      display: grid;
+      place-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding-inline: 20px;
+      background-color: $col-red;
+      &-icon {
+        vertical-align: bottom;
+        display: inline-block;
+        width: 20px;
+        height: 14px;
+        margin-right: 6px;
+        background: url(../img/icon-mail.svg) no-repeat center / contain;
+      }
+      &-txt {
+        font-weight: $fw-bol;
+        color: #fff;
+        line-height: 1;
+        @include max(ll) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.site-header {
+  .sh-bar-btn-inner {
+    .line {
+      &.top {
+        transform-origin: top right;
+        transform: rotate(-45deg) translate(-3px, -3px);
+      }
+      &.med {
+        opacity: 0;
+      }
+      &.btm {
+        transform-origin: bottom right;
+        transform: rotate(45deg) translate(-3px, 3px);
+      }
+    }
+  }
 }
