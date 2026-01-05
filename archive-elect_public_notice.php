@@ -22,7 +22,7 @@
 <meta property="og:title" content="電子公告 | 企業情報">
 <meta property="og:type" content="website">
 <meta property="og:description" content="アルトリスト株式会社の電子公告です。"/>
-<meta property="og:url" content="https://www.altruist.co.jp/company_announcement.php"/>
+<meta property="og:url" content="<?php echo esc_url( get_permalink() ); ?>"/>
 <meta property="og:image" content="https://www.altruist.co.jp/img/ogp_Altruist_2025.png">
 <meta property="og:site_name" content="アルトリスト株式会社"/>
 <!--ogp-->

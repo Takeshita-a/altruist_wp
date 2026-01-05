@@ -39,7 +39,7 @@ function register_custom_post_type_and_taxonomy() {
     "show_in_rest" => false,
   ]);
 
-	register_post_type("company_announcement", [
+	register_post_type("elect_public_notice", [
     "label" => "電子公告",
     "public" => true,
     "has_archive" => true,
