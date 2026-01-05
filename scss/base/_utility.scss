@@ -6,7 +6,9 @@ html {
   scroll-behavior: smooth;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: $fw-reg;
-  color: #303030;
+  color: #000;
+  line-height: 1.75;
+  letter-spacing: 0.03em;
 }
 
 a {
@@ -53,8 +55,89 @@ img {
   }
 }
 
+.site-main {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+}
+
 .container {
   max-width: 1200px;
   width: calc(100% - 60px);
   margin-inline: auto;
+}
+
+.common-ttl {
+  --common-ttl-fs: 80px;
+  &.v2 {
+    --common-ttl-fs: 64px;
+  }
+  &-en {
+    font-family: $ff-oswald;
+    font-size: var(--common-ttl-fs);
+    font-weight: $fw-med;
+    line-height: 1.475;
+  }
+  &-ja {
+    font-size: 20px;
+    font-weight: $fw-bol;
+    line-height: 1.45;
+  }
+}
+
+.common-btn {
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: min(100%, 280px);
+  min-height: 60px;
+  padding: 10px 60px;
+  border: solid 1px $col-red;
+  border-radius: 30px;
+  color: $col-red;
+  &::before {
+    content: '';
+    transition: left 0.3s ease-out;
+    position: absolute;
+    left: -100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: $col-red;
+  }
+  &-txt {
+    position: relative; //前面に
+    z-index: 1;
+    text-align: center;
+    font-weight: $fw-med;
+  }
+  &-arrow {
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    place-items: center;
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: $col-red;
+    border-radius: 50%;
+    &::before {
+      content: '';
+      display: block;
+      width: 16px;
+      aspect-ratio: 16/11;
+      background: url(../img/btn-arrow.svg) no-repeat;
+    }
+  }
+  &:hover {
+    opacity: 1;
+    color: #fff;
+    &::before {
+      left: 0;
+    }
+  }
 }
