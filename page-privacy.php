@@ -22,7 +22,7 @@
 <meta property="og:title" content="プライバシーポリシー">
 <meta property="og:type" content="website">
 <meta property="og:description" content="アルトリスト株式会社は、お客様の個人情報の重要性を認識し、個人情報保護に関する法令及びその他の規範を遵守し、以下のとおりプライバシーポリシーを定め、個人情報の適切な管理及び利用に努めます。"/>
-<meta property="og:url" content="https://www.altruist.co.jp/privacy.php"/>
+<meta property="og:url" content="<?php echo esc_url( get_permalink() ); ?>"/>
 <meta property="og:image" content="https://www.altruist.co.jp/img/ogp_Altruist_2025.png">
 <meta property="og:site_name" content="アルトリスト株式会社"/>
 <!--ogp-->

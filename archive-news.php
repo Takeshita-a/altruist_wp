@@ -21,7 +21,7 @@
 <meta property="og:title" content="News">
 <meta property="og:type" content="website">
 <meta property="og:description" content="アルトリスト株式会社からのお知らせです。"/>
-<meta property="og:url" content="https://www.altruist.co.jp/news.php"/>
+<meta property="og:url" content="<?php echo esc_url( get_permalink() ); ?>"/>
 <meta property="og:image" content="https://www.altruist.co.jp/img/ogp_Altruist_2025.png">
 <meta property="og:site_name" content="アルトリスト株式会社"/>
 <!--ogp-->

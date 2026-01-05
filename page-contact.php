@@ -23,7 +23,7 @@ if( $_POST['c_kind1'] == ""){
 <meta property="og:title" content="お問い合わせ">
 <meta property="og:type" content="website">
 <meta property="og:description" content="お問い合わせはこちらから"/>
-<meta property="og:url" content="https://www.altruist.co.jp/contact.php"/>
+<meta property="og:url" content="<?php echo esc_url( get_permalink() ); ?>"/>
 <meta property="og:image" content="https://www.altruist.co.jp/img/ogp_Altruist_2025.png">
 <meta property="og:site_name" content="アルトリスト株式会社"/>
 <!--ogp-->

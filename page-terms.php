@@ -22,7 +22,7 @@
 <meta property="og:title" content="サイト利用規約">
 <meta property="og:type" content="website">
 <meta property="og:description" content="アルトリスト株式会社が運営するウェブサイトのご利用にあたっては、以下の利用規約をよくお読みいただき、同意の上ご利用ください。"/>
-<meta property="og:url" content="https://www.altruist.co.jp/terms.php"/>
+<meta property="og:url" content="<?php echo esc_url( get_permalink() ); ?>"/>
 <meta property="og:image" content="https://www.altruist.co.jp/img/ogp_Altruist_2025.png">
 <meta property="og:site_name" content="アルトリスト株式会社"/>
 <!--ogp-->

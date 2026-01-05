@@ -14,7 +14,7 @@
 <meta property="og:title" content="<?php the_title(); ?> | アルトリスト株式会社">
 <meta property="og:type" content="article">
 <meta property="og:description" content="私たちと共に、食の安全安心を、先端技術で支えませんか？冷熱機器からマテリアルハンドリングまでアルトリストは総合エンジニアリングカンパニーです。"/>
-<meta property="og:url" content="https://www.altruist.co.jp/news_detail20250611.php"/>
+<meta property="og:url" content="<?php echo esc_url( get_permalink() ); ?>"/>
 <meta property="og:image" content="https://www.altruist.co.jp/img/ogp_Altruist_2025.png">
 <meta property="og:site_name" content="アルトリスト株式会社"/>
 <!--ogp-->
