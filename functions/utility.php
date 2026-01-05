@@ -11,3 +11,7 @@ function is_public_server(){
 function my_page_title(){
 	wp_title( '|', true, 'right' ).bloginfo('name');
 }
+
+function get_img_path(){
+	return get_template_directory_uri().'/img';
+}
