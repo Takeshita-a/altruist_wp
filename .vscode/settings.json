@@ -27,5 +27,6 @@
   "[php]": {
     "editor.formatOnSave": false,
     "editor.formatOnPaste": false
-  }
+  },
+  "cSpell.words": ["myproject"]
 }

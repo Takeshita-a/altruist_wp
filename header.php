@@ -6,3 +6,6 @@
 	<?php require_once get_template_directory() . '/inc/head.php'; ?>
 </head>
 <body <?php body_class(); ?>>
+
+<div class="site-main">
+	<?php get_template_part('template-part/header') ?>
