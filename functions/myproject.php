@@ -52,6 +52,7 @@ function get_company_info_list(){
 			'id' => 'top_message',
 			'ja' => '代表ごあいさつ',
 			'en' => 'TOP MESSAGE',
+			'anchor' => 'top_message',
 		],
 		[
 			'id' => 'management_philosophy',
@@ -115,4 +116,48 @@ function get_nav_list(){
 			'en' => 'PRODUCT',
 		],
 	];
+}
+
+function get_site_header_nav_html($is_sp = false){
+	$result_html = '';
+	$nav_list = get_nav_list();
+
+	$result_html .= '<a href="'.home_url().'" class="nav-item "><p>TOP</p></a>';
+
+	foreach($nav_list as $item){
+		$href = '';
+		$external = '';
+		$class = '';
+		if(isset($item['link'])){
+			$href = $item['link'];
+			$external = 'target="_blank" rel="noopener noreferrer"';
+			$class = 'external';
+		}else{
+			$href = home_url('/'.$item['id'].'/');
+		}
+
+		$result_html .= '<a href="'.$href.'" class="nav-item '.$class.'" '.$external.' data-sh-item="'.$item['id'].'"><p>'.$item['ja'].'</p></a>';
+
+		if($is_sp){
+			//サブメニュー
+			if($item['id'] === 'company'){
+				$pages = get_company_info_list();
+				$pages_html = '';
+				foreach($pages as $item2){
+					$href2 = home_url('/'.$item2['id'].'/');
+					$pages_html .= '<a href="'.$href2.'" class="submenu-item"><p>'.$item2['ja'].'</p></a>';
+				}
+
+				$result_html .= '<div class="submenu">';
+				$result_html .= $pages_html;
+				$result_html .= '</div>';
+			}
+		}
+	}
+
+	return $result_html;
+}
+
+function get_youtube_link(){
+	return 'https://www.youtube.com/@altruist640';
 }

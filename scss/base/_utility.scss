@@ -11,6 +11,13 @@ html {
   letter-spacing: 0.03em;
 }
 
+body {
+  overflow: auto;
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
 a {
   opacity: 1;
 
@@ -133,5 +140,21 @@ a {
     &::before {
       left: 0;
     }
+  }
+}
+
+.circle-arrow {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  aspect-ratio: 1;
+  background-color: $col-red;
+  border-radius: 50%;
+  &::before {
+    content: '';
+    display: block;
+    width: 16px;
+    aspect-ratio: 16/11;
+    background: url(../img/btn-arrow.svg) no-repeat;
   }
 }
