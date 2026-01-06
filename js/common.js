@@ -39,9 +39,9 @@
     const shHover = sh.querySelector('.sh-pc-hover');
     if (!shHover) return;
 
-    const openHover = () => {
+    const openHover = (target) => {
       shHover.style.transitionDelay = '0s';
-      shHover.style.height = shHover.scrollHeight + 'px';
+      shHover.style.height = target.scrollHeight + 'px';
       shHover.classList.add(ACTIVE_CLASS);
     };
 
@@ -56,17 +56,23 @@
       const dataTarget = sh.querySelector('[data-sh-target="' + dataName + '"]');
       if (!dataTarget) return; //continue
 
-      item.addEventListener('mouseenter', () => {
+      const enter = () => {
         if (!isPC) return;
-        openHover();
+        openHover(dataTarget);
         dataTarget.classList.add(ACTIVE_CLASS);
-      });
+      };
 
-      item.addEventListener('mouseleave', () => {
+      const leave = () => {
         if (!isPC) return;
         closeHover();
         dataTarget.classList.remove(ACTIVE_CLASS);
-      });
+      };
+
+      item.addEventListener('mouseenter', enter);
+      item.addEventListener('mouseleave', leave);
+
+      dataTarget.addEventListener('mouseenter', enter);
+      dataTarget.addEventListener('mouseleave', leave);
     });
   }
 
