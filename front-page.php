@@ -6,7 +6,7 @@
 <main>
 
 <section class="mv">
-	<img src="<?=$img_path?>/dummy/dummy-mv.png" alt="">
+	<img src="<?=$img_path?>/dummy/dummy-mv.png" width="100%" alt="">
 </section>
 <!-- //MV -->
 
