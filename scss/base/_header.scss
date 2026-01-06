@@ -156,6 +156,7 @@
     visibility: visible;
     transition: height 0.3s;
     &-item {
+      width: 100%;
       position: absolute;
       visibility: hidden;
       opacity: 0;
@@ -165,11 +166,16 @@
   &-pc-submenu {
     &-header {
     }
+    &-main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
 
 .is-active {
   &.sh-pc-hover {
+    width: 100%;
     height: auto;
     opacity: 1;
     visibility: visible;
